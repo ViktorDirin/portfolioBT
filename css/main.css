@@ -2,10 +2,19 @@
 
 /*Main-----------------------------------*/
 
+/*html {*/
+    /*scroll-behavior: smooth;*/
+/*}*/
 .block_title{
     color: #444444;
     font-weight: 600;
     text-transform: uppercase;
+}
+.anchor{
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
 }
 
 /*Navbar-----------------------------------*/
@@ -45,6 +54,7 @@ header, .bg-dark{
 
 .welcome-block{
     background-color: #e76a73;
+    margin-top: 50px;
 }
 .welcome-block{
     color: #ffffff;
@@ -74,13 +84,11 @@ header, .bg-dark{
 .skill_card:hover .block_title{
     color: #ec3337 !important;
 }
-.skill_card:hover .img-hover{
-    display: block;
-    visibility: visible;
+.skill_card:hover .skill_icon{
+    background-color: #ec3337;
 }
-.skill_card:hover .img-regular{
-    display: none;
-    visibility: hidden;
+.skill_card:hover .skill_icon>span{
+    color: #ffffff;
 }
 
 .img-hover{
@@ -89,10 +97,72 @@ header, .bg-dark{
 }
 .skill_icon{
     margin-bottom: 10px;
+    display: table;
+    width: 40px;
+    height: 40px;
+    background-color: #f5f5f5;
+}
+.skill_icon>span{
+    display: table-cell;
+    vertical-align: middle;
+    color: #777777;
 }
 
 /*portfolio block-----------------------------------*/
 
 .portfolio{
     background-color: #fff;
+}
+.card{
+    border: 1px solid #a4a4a4;
+    border-radius: 0;
+    margin-bottom: 30px;
+}
+.card:hover .goto_button{
+    background-color: #ec3337;
+}
+.card:hover .goto_button>a{
+    color: #ffffff;
+}
+.card-img-top{
+    border-radius: 0;
+    border-bottom: 1px solid #a4a4a4;
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+.card-body{
+    background-color: #f5f5f5;
+    color: #444444;
+    position: relative;
+}
+.card-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.goto_button{
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translatex(-50%);
+    height: 40px;
+    width: 40px;
+    background-color: #d5d5d5;
+    display: table;
+    border-radius: 20px;
+}
+.goto_button>a{
+    display: table-cell;
+    vertical-align: middle;
+    color: #444444;
+}
+
+/*portfolio block-----------------------------------*/
+
+.footer{
+    background-color: #f5f5f5;
+}
+.mcolor{
+    color: #ec3337;
 }
