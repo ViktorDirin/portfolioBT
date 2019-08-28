@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Bootstrap portfolio.iml" filepath="$PROJECT_DIR$/.idea/Bootstrap portfolio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Shablon/My shablon/.idea/My shablon.iml" filepath="$PROJECT_DIR$/../../Shablon/My shablon/.idea/My shablon.iml" />
     </modules>
   </component>
 </project>
