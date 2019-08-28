@@ -272,20 +272,20 @@
 	<div class="modal-dialog" role="document" >
 		<div class="modal-content">
 			<h1>Hire me</h1>
-			<form method="POST" name="contactform" action="contact-form-handler.php">
+			<form method="post" action="send_mail.php">
 				<p>
-					<label for='name'>Your Name:</label> <br>
-					<input type="text" name="name">
+					<h5>Your Name</h5>
+						<input type="text" name="first_name" required>
 				</p>
 				<p>
-					<label for='email'>Your Email Address:</label> <br>
-					<input type="text" name="email"> <br>
+					<h5>Your Email</h5>
+						<input type="email" name="email_address">
 				</p>
 				<p>
-					<label for='message'>Message:</label> <br>
-					<textarea id="email_message" name="message"></textarea>
+					<h5>Message</h5>
+						<textarea id="email_message" name="comments" maxlength="500"></textarea>
 				</p>
-				<input type="submit" value="Submit"><br>
+				<p><button>Submit</button></p>
 			</form>
 		</div>
 	</div>
